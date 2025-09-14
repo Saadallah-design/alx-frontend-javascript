@@ -46,3 +46,38 @@ interface printTeacherFunction {
   
   // Example usage
   console.log(printTeacher("John", "Doe"));
+
+  // writing a class named StudentClass
+  // constructor of the class should be describe through an interface
+  
+  // Task 1: Describe the constructor with an interface
+
+  interface StudentConstructor {
+    firstName: string;
+    lastName: string;
+  }
+
+// Task 2: Describe the class through an interface  
+interface StudentClassInterface{
+    // properties of the class
+    firstName: string;
+    lastName: string;
+    workOnHomework(): string;
+    displayName(): string;
+}
+
+// Write a class named StudentClass that implements the StudentClassInterface
+class StudentClass implements StudentClassInterface {
+// The constructor accepts firstName and lastName arguments as described by the StudentConstructor interface
+    constructor(public firstName: string, public lastName: string) {}
+
+    // method to return the student's full name
+    workOnHomework(): string {
+        return 'Currently working';
+    }
+
+    // method to return the student's full name
+    displayName(): string {
+        return this.firstName;
+    }
+}
