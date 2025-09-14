@@ -71,7 +71,7 @@ class StudentClass {
   // properties of the class
     firstName: string;
     lastName: string;
-    
+
 // The constructor accepts firstName and lastName arguments as described by the StudentConstructor interface
     constructor(public firstName: string, public lastName: string) {}
 
@@ -82,6 +82,6 @@ class StudentClass {
 
     // method to return the student's full name
     displayName(): string {
-        return this.lastName;
+        return this.lastName + ' ' +  this.firstName;
     }
 }
