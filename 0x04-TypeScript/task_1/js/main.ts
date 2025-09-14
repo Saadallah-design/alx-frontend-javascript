@@ -17,7 +17,7 @@ interface Teacher {
 
 // creating Directors interface
 // extending on the teachers interface
-interface Directors extends Teacher {   
+interface Director extends Teacher {   
     numberOfReports: number;
 }
 
