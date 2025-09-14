@@ -1,13 +1,13 @@
 
 interface Teacher {
-    readonly firstName : string, // using readonly before the property name 
+    readonly firstName: string, // using readonly before the property name 
                                  // prevents the property from being assigned 
                                  // a new value after the object is first initialized
-    fullTimeEmployee : boolean,
-    readonly lastName : string,
-    yearsOfExperience? : number,
-    location : string,
-    contract : any,
+    fullTimeEmployee: boolean,
+    readonly lastName: string,
+    yearsOfExperience?: number,
+    location: string,
+    contract: any,
 
     // creating an index-key to allow addition of any other attribute
     // flexible index signature below
@@ -18,7 +18,7 @@ interface Teacher {
 // creating Directors interface
 // extending on the teachers interface
 interface Directors extends Teacher {   
-    numberOfReports : number;
+    numberOfReports: number;
 }
 
 // Example usage of the Directors interface
