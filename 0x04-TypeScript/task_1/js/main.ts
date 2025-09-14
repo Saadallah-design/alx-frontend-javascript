@@ -67,7 +67,11 @@ interface StudentClassInterface{
 }
 
 // Write a class named StudentClass that implements the StudentClassInterface
-class StudentClass implements StudentClassInterface {
+class StudentClass {
+  // properties of the class
+    firstName: string;
+    lastName: string;
+    
 // The constructor accepts firstName and lastName arguments as described by the StudentConstructor interface
     constructor(public firstName: string, public lastName: string) {}
 
@@ -78,6 +82,6 @@ class StudentClass implements StudentClassInterface {
 
     // method to return the student's full name
     displayName(): string {
-        return this.firstName;
+        return this.lastName;
     }
 }
